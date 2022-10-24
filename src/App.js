@@ -12,7 +12,9 @@ function App() {
   const dispatch = useDispatch()
 
   useEffect(()=>{
-    dispatch(getCartItems())
+    dispatch(getCartItems('random'))
+    // testing with random as it is not needed here
+    
   }, [])
 
   useEffect(()=>{
